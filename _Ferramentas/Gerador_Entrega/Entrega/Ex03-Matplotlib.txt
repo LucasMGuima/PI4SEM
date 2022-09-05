@@ -1,0 +1,5 @@
+Link: https://github.com/LucasMGuima/PI4SEM/tree/main/Ex03-Matplotlib
+Integrantes:
+    Lucas da Mata,
+    Raphael Shodi
+            
