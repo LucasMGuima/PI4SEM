@@ -1,6 +1,6 @@
 #    Gera o arquivo txt com o link para o exercicio
 #    e o nome dos intgrantes do grupo
-import numpy as np
+import os
 
 def gerarTexto(link):
     text = """Link: {0}
@@ -12,8 +12,8 @@ Integrantes:
 
 def gerarEntrega(link, nome):
     # Abre o arquivo
-    path = ".\Entrega\{0}.txt".format(nome)
-    file = open(path, "w+")
+    path = "{1}\Entrega\{0}.txt".format(nome, os.curdir)
+    file = open(path, "w")
 
     #prepara o string
     file.write(gerarTexto(link))
